@@ -72,22 +72,25 @@ function BasicCalculatorPage() {
                     value={OPERATORS.DIVIDE}
                     display={'÷'}
                     onClickCallback={onOperationKeyClick}
-                    backgroundColor="orange"
+                    backgroundColor={'orange'}
                 ></DigitalButton>
                 <DigitalButton
                     value={'7'}
                     display={'7'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={'8'}
                     display={'8'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={'9'}
                     display={'9'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={OPERATORS.MULTIPLY}
@@ -99,43 +102,49 @@ function BasicCalculatorPage() {
                     value={'4'}
                     display={'4'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={'5'}
                     display={'5'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={'6'}
                     display={'6'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={OPERATORS.SUBTRACT}
                     display={'-'}
                     onClickCallback={onOperationKeyClick}
-                    backgroundColor="orange"
+                    backgroundColor={'orange'}
                 ></DigitalButton>
                 <DigitalButton
                     value={'1'}
                     display={'1'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={'2'}
                     display={'2'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={'3'}
                     display={'3'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={OPERATORS.ADD}
                     display={'+'}
                     onClickCallback={onOperationKeyClick}
-                    backgroundColor="orange"
+                    backgroundColor={'orange'}
                 ></DigitalButton>
                 <DigitalButton
                     value={OPERATORS.NEGATIVE}
@@ -146,6 +155,7 @@ function BasicCalculatorPage() {
                     value={'0'}
                     display={'0'}
                     onClickCallback={onDigitalKeyClick}
+                    backgroundColor={'#334244'}
                 ></DigitalButton>
                 <DigitalButton
                     value={OPERATORS.PERIOD}
@@ -156,7 +166,7 @@ function BasicCalculatorPage() {
                     value={OPERATORS.EQUAL}
                     display={'='}
                     onClickCallback={onEqualKeyClick}
-                    backgroundColor="#8A2BE2"
+                    backgroundColor={'#8A2BE2'}
                 ></DigitalButton>
             </div>
         </>

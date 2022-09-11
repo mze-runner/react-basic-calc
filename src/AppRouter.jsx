@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
 
-import BasicCalculatorPage from './Pages/BasicCalculator';
+import BasicCalculatorReducer from './Pages/BasicCalculatorReducer';
 import AdvancedCalculatorPage from './Pages/AdvancedCalculator';
 
 function AppRouter() {
     return (
         <Routes>
-            <Route index element={<BasicCalculatorPage />} />
+            <Route index element={<BasicCalculatorReducer />} />
             <Route path="ad" element={<AdvancedCalculatorPage />} />
             <Route path="*" element={<div>404 NOT FOUND</div>} />
         </Routes>
