@@ -1,8 +1,9 @@
-function DigitalDisplay({ userInputDisplay }) {
-    const userInputDisplayShow = !userInputDisplay ? '0' : userInputDisplay;
+function DigitalDisplay({ displayUserInput, displayLog, displayResult }) {
     return (
         <div className="digital-display">
-            <div>{userInputDisplayShow}</div>
+            <div className="display-log">{displayLog}</div>
+            <div className="display">{displayUserInput}</div>
+            <div className="display-temp">{displayResult}</div>
         </div>
     );
 }
