@@ -39,7 +39,9 @@ const basicCalculatorReducer = (state, action) => {
             // TODO: add operation click logic here
             return state;
         case ACTIONS.ON_NEGATIVE:
-            // TODO: add negative sign change here
+            // state contains current state (before current modification)
+            // the only variable you overrides is isNegative.
+            // isNegative take itself and inverse into opposite boolean value
             return { ...state, isNegative: !state.isNegative };
         case ACTIONS.ON_CLEAR_ELEMENT:
             // TODO: rewrite to clear active element (!)
@@ -59,6 +61,9 @@ const basicCalculatorReducer = (state, action) => {
 
 function BasicCalculatorPage() {
     // reducer
+    // calc the object with include ALL variables
+    // dispatch the set function which pass an event & payload (new values) to reducer functions
+    // basicCalculatorReducer - the reducer function that provides business logic per event on the page
     const [calc, dispatch] = useReducer(basicCalculatorReducer, initialState);
     //
     const onDigitalKeyClick = (key) => {
