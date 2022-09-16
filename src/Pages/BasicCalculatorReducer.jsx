@@ -12,6 +12,7 @@ const initialState = {
     isNegative: false,
     // display
     userInputDisplay: '0',
+    userInput: undefined,
 };
 const ACTIONS = {
     ON_DIGITAL_BUTTON: 'onDigitalButtonClick',
@@ -27,10 +28,13 @@ const ACTIONS = {
 const basicCalculatorReducer = (state, action) => {
     switch (action.type) {
         case ACTIONS.ON_DIGITAL_BUTTON:
-            const currentNumber = state.primaryNumber;
+            const currentNumber = state.userInput;
             const isCurrentNumberUndefined = typeof currentNumber === 'undefined';
             const newValue = (isCurrentNumberUndefined ? '' : currentNumber) + action.payload;
-            return { ...state, primaryNumber: newValue, userInputDisplay: newValue };
+            // state contains current state (before current modification)
+            // ...state (spread operator) to export current state
+            // userInput & userInputDisplay you update specific state variables on top of current state
+            return { ...state, userInput: newValue, userInputDisplay: newValue };
         case ACTIONS.ON_OPERATION:
             // TODO: add operation click logic here
             return state;

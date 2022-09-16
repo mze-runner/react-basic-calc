@@ -34,8 +34,28 @@ section {
     position: relative;
 }
 
+.display-log {
+    opacity: 0.4;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.display-temp {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    font-size: 20px;
+    opacity: 0.4;
+}
+
 .buttons-group {
     color: whitesmoke;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+h5 {
+    margin-top: 10px;
+    color: beige;
 }
